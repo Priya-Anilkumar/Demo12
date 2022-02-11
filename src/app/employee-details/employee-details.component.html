@@ -1,0 +1,19 @@
+<p>employee-details works!</p>
+<div *ngIf="employee">
+  <div><label>Name: </label> {{ employee.firstName }}</div>
+  <div><label>Age: </label> {{ employee.lastName }}</div>
+  <div><label>Email</label> {{ employee.emailId }}</div>
+  <div><label>Active: </label> {{ employee.active }}</div>
+
+  <span class="button is-small btn-primary" *ngIf="employee.active"
+    >Inactive</span
+  >
+
+  <span class="button is-small btn-primary" *ngIf="!employee.active"
+    >Active</span
+  >
+
+  <span class="button is-small btn-danger">Delete</span>
+
+  <hr />
+</div>
